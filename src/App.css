@@ -1,4 +1,5 @@
-
+*{margin: 0px;
+padding: 0px;}
 
 .h1{color: #A34C4C;}
 
@@ -34,5 +35,10 @@ background-color: #E3E3E3;}
   background-color: #A34C4C;
   color:white;
   border-style: solid;
+}
 
+.sideDiv{
+  width: 233px;
+   height: 100vh;
+  background-color: #A34C4C;
 }

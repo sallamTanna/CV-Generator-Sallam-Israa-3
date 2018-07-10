@@ -6,6 +6,7 @@ import EducationSectionComponent from './EducationSectionComponent';
 import ExperianceSectionComponent from './ExperianceSectionComponent';
 import SkillsSectionComponent from './SkillsSectionComponent';
 import ImageSectionComponent from './ImageSectionComponent';
+import SideDivInQuestionPage from './SideDivInQuestionPage';
 
 
 class AllSections extends React.Component{
@@ -16,6 +17,7 @@ class AllSections extends React.Component{
 
 
 render(){return <div>
+<SideDivInQuestionPage />
 <ContactSectionComponent />
 <SummarySectionComponent />
 <EducationSectionComponent />
