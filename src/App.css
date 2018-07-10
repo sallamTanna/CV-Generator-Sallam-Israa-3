@@ -1,28 +1,38 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.h1{color: #A34C4C;}
+
+.h2, .h3{color: white;}
+
+.getSatrtButton{
+  border-radius: 15px;
+  height: 40px;
+  width: 160px;
+  background-color:#A34C4C;
   color: white;
+  font-size: 20px;
+  border-style: solid;
 }
 
-.App-title {
-  font-size: 1.5em;
+.HomePageComponent{
+
+  width: 100%;
+  height: 678px;
+background-color: rgba(0,0,0,0.8);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
-.App-intro {
-  font-size: large;
-}
+.input{color: black;
+background-color: #E3E3E3;}
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.span{color:#8B8989;}
+
+.button{
+  background-color: #A34C4C;
+  color:white;
+  border-style: solid;
+
 }
