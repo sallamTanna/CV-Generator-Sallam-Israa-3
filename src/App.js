@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
- import './App.css';
+import './App.css';
 import HomePageComponent from './Components/HomePageComponent';
 import AllSections from './Components/AllSections';
 
