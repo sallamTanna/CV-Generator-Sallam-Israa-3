@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './ExperianceSectionComponent.css'
 
 class ExperianceSectionComponent extends React.Component{
   constructor(props){
@@ -8,9 +8,12 @@ class ExperianceSectionComponent extends React.Component{
   }
 
 
-render(){return <div>
-  <span className="span">Your Experiance</span><input type="text" className="input"/>
-  <button className="button">ADD MORE</button>
+render(){return <div className="ExperianceSectionComponent">
+
+<div className="span experienceIntro">List any formal job experience and any volunteer or unpaid experience you have.</div>
+<div className="flexColumn">  <span className="span experienceSpan">Your Experiance</span><input type="text" className="input experienceInput"/>
+  <button className="button"><i class="fas fa-plus"></i> ADD MORE</button></div>
+
   </div>
 }
 

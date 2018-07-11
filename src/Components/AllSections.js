@@ -7,7 +7,7 @@ import ExperianceSectionComponent from './ExperianceSectionComponent';
 import SkillsSectionComponent from './SkillsSectionComponent';
 import ImageSectionComponent from './ImageSectionComponent';
 import SideDivInQuestionPage from './SideDivInQuestionPage';
-
+import './../App.css'
 
 class AllSections extends React.Component{
   constructor(props){
@@ -16,14 +16,16 @@ class AllSections extends React.Component{
   }
 
 
-render(){return <div>
+render(){return <div className="AllSections">
 <SideDivInQuestionPage />
+<div className="content">
 <ContactSectionComponent />
 <SummarySectionComponent />
 <EducationSectionComponent />
 <ExperianceSectionComponent />
 <SkillsSectionComponent />
 <ImageSectionComponent />
+</div>
   </div>}
 
 
