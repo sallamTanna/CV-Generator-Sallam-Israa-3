@@ -8,40 +8,16 @@ import ImageSectionComponent from './ImageSectionComponent';
 import SideDivInQuestionPage from './SideDivInQuestionPage';
 import './../App.css'
 
-
 class AllSections extends React.Component{
-  constructor(props){
-    super(props);
-    this.state={
-      name:'',
-      email:'',
-      degree:'',
-      experiance:'',
-      date:'',
-      school:'',
-      moreEducation:'',
-      skill:'',
-      summary:'',
-    }
-this.log=this.log.bind(this);
-this.generateFinalCV=this.generateFinalCV.bind(this);
-  }
 
-  log(name, value){this.setState({[name]: value});}
-  generateFinalCV(){
-      window.location = "/finalcv";
-  }
+render(){
 
-
-
-render()
- {console.log(this.state);
-   return <div className="AllSections">
-
+  console.log(this.props)
+  return <div className="AllSections">
 
 <SideDivInQuestionPage />
 <div className="content">
-<ContactSectionComponent allStates={this.log}  />
+<ContactSectionComponent answers={this.props.answers} log={this.props.log}  />
 <SummarySectionComponent allStates={this.log}/>
 <EducationSectionComponent allStates={this.log}/>
 <ExperianceSectionComponent allStates={this.log}/>

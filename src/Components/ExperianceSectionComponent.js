@@ -17,7 +17,7 @@ render(){return <div className="ExperianceSectionComponent">
 <div className="span experienceIntro">List any formal job experience and any volunteer or unpaid experience you have.</div>
 <div className="flexColumn">  <span className="span experienceSpan">Your Experiance</span>
 <input type="text" className="input experienceInput" onChange={this.handleInputChange} id="experiance"/>
-  <button className="button"><i class="fas fa-plus"></i> ADD MORE</button></div>
+  <button className="button"><i className="fas fa-plus"></i> ADD MORE</button></div>
 
   </div>
 }
