@@ -12,7 +12,7 @@ class EducationSectionComponent extends React.Component{
   handleInputChange(e) {
     this.props.allStates(e.target.id, e.target.value)
   }
-  
+
 render(){return <div className="EducationSectionComponent">
 <div className="span educationSpan">If you have completed any education, this is a section to include it.</div>
 <div className='educationInputs'>
@@ -25,7 +25,7 @@ render(){return <div className="EducationSectionComponent">
 <div className="span educationSpan">Add some more info about this degree</div>
 
 <textarea onChange={this.handleInputChange} rows="10" cols="30" className="input educationtextarea" placeholder="  Add some more info about this degree..." id="more"></textarea>
-<div><button className="button"><i class="fas fa-plus"></i> ADD MORE</button></div>
+<div><button className="button"><i className="fas fa-plus"></i> ADD MORE</button></div>
 
 
   </div>}

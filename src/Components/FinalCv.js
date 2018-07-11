@@ -5,7 +5,7 @@ class FinalCv extends React.Component{
   constructor(props){
     super(props);
     this.state={name:'',};
-
+console.log('props in final CV',props);
   }
 
 
