@@ -5,7 +5,7 @@ padding: 0px;}
 
 .h2, .h3{color: white;}
 
-.getSatrtButton{
+.getSatrtButton, .generateCV{
   border-radius: 15px;
   height: 40px;
   width: 160px;

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import HomePageComponent from './Components/HomePageComponent';
 import AllSections from './Components/AllSections';
+import FinalCv from './Components/FinalCv';
 
 
 class App extends React.Component {
@@ -13,6 +14,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={HomePageComponent} />
           <Route exact path='/QuestionForms' component={AllSections} />
+          <Route exact path='/finalcv' component={FinalCv} />
          </Switch>
         </div>
       </BrowserRouter>

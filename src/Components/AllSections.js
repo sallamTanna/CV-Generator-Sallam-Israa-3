@@ -1,5 +1,4 @@
 import React from 'react';
-
 import ContactSectionComponent from './ContactSectionComponent';
 import SummarySectionComponent from './SummarySectionComponent';
 import EducationSectionComponent from './EducationSectionComponent';
@@ -9,25 +8,41 @@ import ImageSectionComponent from './ImageSectionComponent';
 import SideDivInQuestionPage from './SideDivInQuestionPage';
 
 
+
 class AllSections extends React.Component{
   constructor(props){
     super(props);
-    this.state={}
+    this.state={
+      name:'',
+      email:'',
+      degree:'',
+      experiance:'',
+      date:'',
+      school:'',
+      moreEducation:'',
+      skill:'',
+      summary:'',
+    }
+this.log=this.log.bind(this);
   }
 
 
-render(){return <div>
+  log(name, value){this.setState({[name]: value});    }
+
+render()
+ {console.log(this.state);
+   return <div>
+
+
 <SideDivInQuestionPage />
-<ContactSectionComponent />
-<SummarySectionComponent />
-<EducationSectionComponent />
-<ExperianceSectionComponent />
-<SkillsSectionComponent />
-<ImageSectionComponent />
+<ContactSectionComponent allStates={this.log}  />
+<SummarySectionComponent allStates={this.log}/>
+<EducationSectionComponent allStates={this.log}/>
+<ExperianceSectionComponent allStates={this.log}/>
+<SkillsSectionComponent allStates={this.log}/>
+<ImageSectionComponent allStates={this.log}/>
+
   </div>}
 
-
 }
-
-
-export default AllSections;
+   export default AllSections;
