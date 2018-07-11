@@ -24,10 +24,15 @@ class AllSections extends React.Component{
       summary:'',
     }
 this.log=this.log.bind(this);
+this.generateFinalCV=this.generateFinalCV.bind(this);
   }
 
 
-  log(name, value){this.setState({[name]: value});    }
+  log(name, value){this.setState({[name]: value});}
+  generateFinalCV(){
+      window.location = "/finalcv";
+  }
+
 
 render()
  {console.log(this.state);

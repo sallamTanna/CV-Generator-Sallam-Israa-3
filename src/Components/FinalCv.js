@@ -4,6 +4,7 @@ import SideDivInFinalForm from './SideDivInFinalForm';
 class FinalCv extends React.Component{
   constructor(props){
     super(props);
+    this.state={name:'',};
 
   }
 
