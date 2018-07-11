@@ -1,0 +1,15 @@
+
+label{
+    padding: 10px;
+    background: #8B8989;
+    display: table;
+    color: #fff;
+     }
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="file"]:hover {
+    background: #FB8989;
+}

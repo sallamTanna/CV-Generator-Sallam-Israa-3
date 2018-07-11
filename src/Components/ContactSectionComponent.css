@@ -1,0 +1,31 @@
+.ContactSectionComponent {
+
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+
+}
+.spans {
+  display: flex;
+  flex-flow: column;
+  margin-right: 1000px;
+
+}
+.inputs {
+  display: flex;
+  flex-flow: column;
+  margin-left: -1000px;
+
+}
+.contactInfoContainer {
+  display: flex;
+  flex-flow: row;
+
+}
+
+.textarea {
+  text-align: center;
+}
+.contactIntro {
+  color: #000022;
+}

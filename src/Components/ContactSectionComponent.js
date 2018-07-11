@@ -1,4 +1,5 @@
 import React from 'react';
+import './ContactSectionComponent.css';
 let data = {};
 
 
@@ -28,24 +29,33 @@ handleInputChange(e) {
 }
 
 
-render(){return <div>
+render(){return <div className="ContactSectionComponent">
+
+<div>
+Here we go, Fill this form then press GENERATE Button to get your CV!!
+<br/>
+<br/> <div className="span contactIntro">This section is related to your personal contact information, make sure to enter the correct data!<br/><br/></div></div>
+<div className='contactInfoContainer'>
+<div className="spans">
 <span className="span">Your name: </span>
-<input type="text" className="input" onChange={this.handleInputChange} id="name" />
-
 <span className="span">Email: </span>
-<input type="email" className="input" onChange={this.handleInputChange} id="email"/>
-
 <span className="span">Cell Phone: </span>
-<input type="text" className="input" onChange={this.handleInputChange} id="cellPhone"/>
-
 <span className="span">Home Phone: </span>
-<input type="text" className="input" onChange={this.handleInputChange} id="homePhone"/>
-
 <span className="span">Address: </span>
-<textarea rows="10" cols="30" className="input" onChange={this.handleInputChange} id="address">Enter your address...</textarea>
+</div>
+<div className="inputs">
+<input type="text" className="input" onChange={this.handleInputChange} id="name"/>
+<input type="email" className="input" onChange={this.handleInputChange} id="id"/>
+<input type="text" className="input" onChange={this.handleInputChange} id="cellPhone"/>
+<input type="text" className="input" onChange={this.handleInputChange} id="homePhone"/>
+<textarea className="textarea" rows="10" cols="30" className="input" placeholder=" Write your address.." onChange={this.handleInputChange} id="address"></textarea>
 
+</div>
 
-  </div>}
+</div>
+  </div>
+
+}
 
 
 }
