@@ -1,4 +1,5 @@
 import React from 'react';
+import './SkillsSectionComponent.css'
 
 class SkillsSectionComponent extends React.Component{
   constructor(props){
@@ -6,9 +7,12 @@ class SkillsSectionComponent extends React.Component{
     this.state={}
   }
 
-render(){return <div>
-  <span className="span">Your Skill</span><input type="text" className="input"/>
-  <button className="button">ADD MORE</button>
+render(){return <div className="SkillsSectionComponent">
+<div className="span skillsIntro">This section contains all the skills that you have.. </div>
+  <div className="span skillsSpan">Your Skill</div><input type="text" className="input skillsInput"/>
+  <div>
+  <button className="button"><i class="fas fa-plus"></i> ADD MORE</button>
+  </div>
   </div>}
 
 

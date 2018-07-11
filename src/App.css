@@ -1,44 +1,120 @@
-*{margin: 0px;
-padding: 0px;}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'PT Sans', sans-serif;
+}
 
-.h1{color: #A34C4C;}
+.h1 {
+  color: #A34C4C;
+}
 
-.h2, .h3{color: white;}
+.h2, .h3 {
+  color: #FFF6F6;
+}
 
-.getSatrtButton{
+.getSatrtButton {
   border-radius: 15px;
   height: 40px;
   width: 160px;
-  background-color:#A34C4C;
-  color: white;
+  background-color: #A34C4C;
+  color: #FFF6F6;
   font-size: 20px;
   border-style: solid;
 }
 
-.HomePageComponent{
-
+.HomePageComponent {
   width: 100%;
   height: 678px;
-background-color: rgba(0,0,0,0.8);
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.input{color: black;
-background-color: #E3E3E3;}
+.input {
+  color: black;
+  background-color: #E3E3E3;
+  margin: 5px;
+  border: 1px;
+  height: 30px;
+  width: 130%;
+  margin-left: -10px;
+  margin-right: -68px;
+}
 
-.span{color:#8B8989;}
+.span {
+  color: #8B8989;
+  margin: 10px;
+}
 
-.button{
-  background-color: #A34C4C;
-  color:white;
+.button {
+  background-color: #FFF6F6;
+  color: #A34C4C;
   border-style: solid;
+  border-radius: 10px;
+  font-weight: bolder;
+  width: 90px;
+  border-color: #FFF6F6;
 }
 
-.sideDiv{
-  width: 233px;
-   height: 100vh;
-  background-color: #A34C4C;
+.boldPlus {
+  font-weight: 900;
+}
+
+.sideDiv {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 25%;
+  height: 186vh;
+  background-image: url('http://www.northernminerjobs.com/wp-content/uploads/2015/06/Resume-Check.pdf.png');
+  background-size: cover;
+}
+
+.AllSections {
+  display: flex;
+  flex-flow: row;
+  background-color: #FFF6F6;
+}
+
+.contactSideText {
+  margin-top: 71px;
+}
+
+.summarySideText {
+  margin-top: 247px;
+}
+
+.educationSideText {
+  margin-top: 200px;
+}
+.experienceText {
+  margin-top: 246px;
+}
+.skillsText {
+  margin-top: 129px;
+}
+.imageText {
+  margin-top: 120px;
+}
+
+.contactSideText, .summarySideText, .educationSideText,.experienceText,.skillsText,.imageText {
+  margin-left: 33px;
+  color: #A34C4C;
+  font-weight: bolder;
+}
+
+::placeholder {
+font-size: 1em;
+    opacity: 1; /* Firefox */
+}
+
+@media screen and (max-width: 414px) {
+  /* .contactSideText {
+      margin-top: 173%;
+      margin-left: 10px;
+
+  } */
+  .sideDiv {
+    display: none;
+  }
 }

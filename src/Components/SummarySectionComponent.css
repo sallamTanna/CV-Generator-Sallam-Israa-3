@@ -1,0 +1,26 @@
+.SummarySectionComponent {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.summarytext {
+  margin-left: 10px;
+    color: #000022;
+}
+
+.summarytextarea {
+  width: 50%;
+  height: 100px;
+  margin-left: 15px
+}
+
+
+@media screen and (max-width: 330px) {
+  .summarytextarea {
+    width: 90%;
+    height: 100px;
+    margin-left: 20px
+  }
+
+}

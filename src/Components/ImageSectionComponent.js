@@ -1,4 +1,5 @@
 import React from 'react';
+import './ImageSectionComponent.css'
 
 class ImageSectionComponent extends React.Component{
   constructor(props){
@@ -6,10 +7,12 @@ class ImageSectionComponent extends React.Component{
     this.state={}
   }
 
-  render(){return <div>
+  render(){return <div className="ImageSectionComponent">
 
-    <span className="span">Add professional image for you</span>
+    <span className="span">Add professional image for you<br/><br/></span>
+    <label className="imageDiv">Browse
     <input type="file" />
+    </label>
     </div>}
 
 }

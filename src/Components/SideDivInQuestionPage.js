@@ -8,9 +8,13 @@ class SideDivInQuestionPage extends React.Component{
 
 
 render(){return <div className="sideDiv">
-dfs
-faf
-aerf
+<div className="contactSideText">Contact Info</div>
+<div className="summarySideText">Summary</div>
+<div className="educationSideText">Education</div>
+<div className="experienceText">Experience</div>
+<div className="skillsText">Skills</div>
+<div className="imageText">Image</div>
+
    </div>}
 
 }
