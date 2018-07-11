@@ -7,15 +7,26 @@ import FinalCv from './Components/FinalCv';
 
 
 class App extends React.Component {
-  
+constructor(props){
+  super(props);
+  this.state={name:''};
+  this.updateData=this.updateData.bind(this);
+}
+
+
+updateData(state){this.setState({name:state.name})}
+
   render() {
       return (
         <BrowserRouter>
         <div>
         <Switch>
-          <Route exact path='/' component={HomePageComponent} />
-          <Route exact path='/QuestionForms' component={AllSections} />
-          <Route exact path='/finalcv' component={FinalCv} />
+<Route exact path='/' component={HomePageComponent} />
+<Route exact path='/QuestionForms'  render={(props) => (<AllSections sendDataToCVComponent={this.updateData} />)} />
+<Route exact path='/finalcv' render={(props) => (<FinalCv username={this.state.name} />)}/>
+
+
+          <HomePageComponent name ='jjh' />
          </Switch>
         </div>
       </BrowserRouter>

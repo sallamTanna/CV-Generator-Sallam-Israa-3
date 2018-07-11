@@ -6,7 +6,8 @@ import ExperianceSectionComponent from './ExperianceSectionComponent';
 import SkillsSectionComponent from './SkillsSectionComponent';
 import ImageSectionComponent from './ImageSectionComponent';
 import SideDivInQuestionPage from './SideDivInQuestionPage';
-import './../App.css'
+import './../App.css';
+let newObj= {};
 
 
 class AllSections extends React.Component{
@@ -24,21 +25,24 @@ class AllSections extends React.Component{
       summary:'',
     }
 this.log=this.log.bind(this);
-this.generateFinalCV=this.generateFinalCV.bind(this);
-  }
+  // this.sendDataFromAllSectionComponentToAppComponent=this.sendDataFromAllSectionComponentToAppComponent.bind(this);
+}
+log(name, value){this.setState({[name]: value});
+newObj=this.state;
+}
 
-  log(name, value){this.setState({[name]: value});}
-  generateFinalCV(){
-      window.location = "/finalcv";
-  }
+
+handleInputChange(e) {
+  this.props.allStates(e.target.id, e.target.value)
+}
 
 
 
 render()
- {console.log(this.state);
-   return <div className="AllSections">
+ {console.log(newObj);
+   return <div className="AllSections" >
 
-
+{this.props.sendDataToCVComponent(newObj)}
 <SideDivInQuestionPage />
 <div className="content">
 <ContactSectionComponent allStates={this.log}  />
@@ -46,7 +50,7 @@ render()
 <EducationSectionComponent allStates={this.log}/>
 <ExperianceSectionComponent allStates={this.log}/>
 <SkillsSectionComponent allStates={this.log}/>
-<ImageSectionComponent allStates={this.log}/>
+<ImageSectionComponent allStates={this.log} />
 </div>
   </div>}
 
