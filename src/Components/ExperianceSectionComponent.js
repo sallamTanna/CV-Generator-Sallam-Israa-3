@@ -9,7 +9,7 @@ class ExperianceSectionComponent extends React.Component{
   }
 
   handleInputChange(e) {
-    this.props.allStates(e.target.id, e.target.value)
+    this.props.log(e.target.id, e.target.value)
   }
 
 render(){return <div className="ExperianceSectionComponent">

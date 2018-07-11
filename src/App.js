@@ -55,8 +55,7 @@ render() {
     <Switch >
     <Route exact path = '/'  component = {  HomePageComponent  }/>
     < Route exact path = '/QuestionForms'render ={ () => <AllSections answers={this.state.answers} log={this.log}/>}/>
-     <  Route exact path = '/finalcv' render = {(props) => < FinalCv { ...props}/>}/ >
-      // <Route path='/finalcv' render={(name) => <FinalCv name="israa"/>}/>
+     <  Route exact path = '/finalcv' render = {() => < FinalCv username={this.state.answers.name} email={this.state.answers.email} mobile={this.state.answers.cellPhone} telephone={this.state.answers.homePhone} summary={this.state.answers.summary} education={this.state.answers.education}/>}/ >
       </Switch>
       </BrowserRouter>
     )

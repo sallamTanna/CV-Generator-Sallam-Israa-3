@@ -18,11 +18,11 @@ render(){
 <SideDivInQuestionPage />
 <div className="content">
 <ContactSectionComponent answers={this.props.answers} log={this.props.log}  />
-<SummarySectionComponent allStates={this.log}/>
-<EducationSectionComponent allStates={this.log}/>
-<ExperianceSectionComponent allStates={this.log}/>
-<SkillsSectionComponent allStates={this.log}/>
-<ImageSectionComponent allStates={this.log}/>
+<SummarySectionComponent  answers={this.props.answers} log={this.props.log} />
+<EducationSectionComponent  answers={this.props.answers} log={this.props.log} />
+<ExperianceSectionComponent  answers={this.props.answers} log={this.props.log} />
+<SkillsSectionComponent  answers={this.props.answers} log={this.props.log} />
+<ImageSectionComponent  answers={this.props.answers} log={this.props.log} />
 </div>
   </div>}
 
