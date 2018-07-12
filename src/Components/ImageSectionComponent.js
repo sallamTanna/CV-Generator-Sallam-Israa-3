@@ -33,8 +33,9 @@ window.location='/finalcv'}
     <label className="imageDiv">Browse
     <input type="file" onChange={this.handleInputChange} />
     </label>
-     <Link to='/finalcv'>gooooooooo</Link>
-
+    <div className="generateBtn">
+    <Link to='/finalcv' className="genarateCV">GENERATE!</Link>
+    </div> 
     </div>}
 
 }

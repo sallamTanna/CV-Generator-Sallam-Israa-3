@@ -35,22 +35,14 @@
 
 .getSatrtButton:hover{
   background-color: white;
-  color: #A34C4C;   
+  color: #A34C4C;
 }
-
-
-
-
-
-
-
-
-
-
 
 .centerGenerateBtn{
   text-align: center;
 }
+
+
 
 .HomePageComponent {
   width: 100%;
@@ -68,7 +60,7 @@
   margin: 5px;
   border: 1px;
   height: 30px;
-  width: 130%;
+  width: 200px;
   margin-left: -10px;
   margin-right: -68px;
 }
@@ -147,4 +139,21 @@ font-size: 1em;
   .sideDiv {
     display: none;
   }
+}
+
+
+
+
+
+.genarateCV{color: white;
+background-color: #A34C4C;
+border-radius: 30px;
+text-decoration: none;
+padding-left: 10px;
+padding-right: 10px;
+padding: 15px;
+margin-top: 30px;
+}
+
+.generateBtn{text-align: center;
 }
