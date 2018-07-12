@@ -31,31 +31,42 @@ class App extends React.Component {
       moreEducation: '',
       skill: '',
       summary: '',
+      imgSrc:''
     }
 }
     this.log = this.log.bind(this);
-    this.generateFinalCV = this.generateFinalCV.bind(this);
-  }
+    this.newSrc = this.newSrc.bind(this);
+   }
 
   log(name, value) {
-    console.log({name, value})
-    this.setState(prevState => {
+     this.setState(prevState => {
       return {answers:{...prevState.answers, [name]: value}}
-
     })
+  }
 
-  }
-  generateFinalCV() {
-    window.location = "/finalcv";
-  }
+
+
+newSrc(att){
+  this.setState(prevState => {
+   return {answers:{...prevState.answers, ['imgSrc']: att}}
+ })}
+
+
 
 render() {
   console.log(this.state.answers)
   return ( <BrowserRouter >
     <Switch >
     <Route exact path = '/'  component = {  HomePageComponent  }/>
-    < Route exact path = '/QuestionForms'render ={ () => <AllSections answers={this.state.answers} log={this.log}/>}/>
-     <  Route exact path = '/finalcv' render = {() => < FinalCv username={this.state.answers.name} email={this.state.answers.email} mobile={this.state.answers.cellPhone} telephone={this.state.answers.homePhone} summary={this.state.answers.summary} education={this.state.answers.education}/>}/ >
+    <Route exact path = '/QuestionForms'render ={ () => <AllSections answers={this.state.answers} log={this.log} newSrc={this.newSrc}/>}/>
+    <Route exact path = '/finalcv' render = {() => < FinalCv
+       username={this.state.answers.name} email={this.state.answers.email}
+       mobile={this.state.answers.cellPhone} telephone={this.state.answers.homePhone}
+       summary={this.state.answers.summary} education={this.state.answers.education}
+       degree={this.state.answers.degree} school={this.state.answers.school}
+       date={this.state.answers.date} moreEducation={this.state.answers.moreEducation}
+       skill={this.state.answers.skill} experiance={this.state.answers.experiance}
+       imgSrc={this.state.answers.imgSrc}/>}/ >
       </Switch>
       </BrowserRouter>
     )

@@ -24,7 +24,7 @@ render(){return <div className="EducationSectionComponent">
 </div>
 <div className="span educationSpan">Add some more info about this degree</div>
 
-<textarea onChange={this.handleInputChange} rows="10" cols="30" className="input educationtextarea" placeholder="  Add some more info about this degree..." id="more"></textarea>
+<textarea onChange={this.handleInputChange} rows="10" cols="30" className="input educationtextarea" placeholder="  Add some more info about this degree..." id="moreEducation"></textarea>
 <div><button className="button"><i className="fas fa-plus"></i> ADD MORE</button></div>
 
 

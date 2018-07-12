@@ -12,8 +12,7 @@ class AllSections extends React.Component{
 
 render(){
 
-  console.log(this.props)
-  return <div className="AllSections">
+   return <div className="AllSections">
 
 <SideDivInQuestionPage />
 <div className="content">
@@ -22,7 +21,7 @@ render(){
 <EducationSectionComponent  answers={this.props.answers} log={this.props.log} />
 <ExperianceSectionComponent  answers={this.props.answers} log={this.props.log} />
 <SkillsSectionComponent  answers={this.props.answers} log={this.props.log} />
-<ImageSectionComponent  answers={this.props.answers} log={this.props.log} />
+<ImageSectionComponent  answers={this.props.answers} newSrc={this.props.newSrc} />
 </div>
   </div>}
 
