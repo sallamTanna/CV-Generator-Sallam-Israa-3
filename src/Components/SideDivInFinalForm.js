@@ -7,7 +7,7 @@ class SideDivInFinalForm extends React.Component{
   }
 
 render(){return <div className="sideDiv">
-njk
+ 
   </div>}
 
 

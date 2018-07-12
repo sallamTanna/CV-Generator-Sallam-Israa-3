@@ -22,7 +22,7 @@ render() { return  <div className="bodyTag">
 
   <h1 className="h1">CV GENERATOR</h1>
   <h2 className="h2">Start Creating your CV online now</h2>
-  <h3 className="h3">Answer some question and get your CV ready!</h3>
+  <span className="h3">Answer some question and get your CV ready!</span>
   <button className="getSatrtButton" onClick={this.handleStartGeneratingButton}>Let’s Start! </button>
 
   </div>

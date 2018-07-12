@@ -6,20 +6,50 @@
 
 .h1 {
   color: #A34C4C;
+  font-size: 70px;
 }
 
 .h2, .h3 {
   color: #FFF6F6;
 }
 
-.getSatrtButton {
+.h3{
+  font-size: 16px;
+}
+
+.getSatrtButton, .generateCV {
   border-radius: 15px;
   height: 40px;
-  width: 160px;
+  width: 200px;
   background-color: #A34C4C;
   color: #FFF6F6;
   font-size: 20px;
-  border-style: solid;
+  border: none;
+  box-shadow: 2px 2px 30px 1px #db9090;
+
+}
+
+.getSatrtButton{
+  margin-top: 30px;
+}
+
+.getSatrtButton:hover{
+  background-color: white;
+  color: #A34C4C;   
+}
+
+
+
+
+
+
+
+
+
+
+
+.centerGenerateBtn{
+  text-align: center;
 }
 
 .HomePageComponent {

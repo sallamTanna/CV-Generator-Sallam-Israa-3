@@ -18,6 +18,12 @@ render(){return <div>
 <h3>Email:{this.props.email}</h3>
 <h3>Mobile:{this.props.mobile}</h3>
 <h3>Telephone:{this.props.telephone}</h3>
+<h3>Degree:{this.props.degree}</h3>
+<h3>School:{this.props.school}</h3>
+<h3>Date:{this.props.date}</h3>
+<h6>{this.props.moreEducation}</h6>
+<h3>Skills:{this.props.skill}</h3>
+<h3>experiance:{this.props.experiance}</h3>
 
 
 
